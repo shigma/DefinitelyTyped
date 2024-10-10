@@ -216,6 +216,7 @@ declare namespace Calendar {
         startEditable?: boolean;
         durationEditable?: boolean;
         resourceIds?: string | number | Array<string | number>;
+        resourceId?: string | number | Array<string | number>;
         display?: "auto" | "background";
         backgroundColor?: string;
         textColor?: string;
@@ -273,7 +274,7 @@ declare namespace Calendar {
     interface Options {
         allDayContent?: Content;
         allDaySlot?: boolean;
-        buttonText?: ButtonTextMapping | (() => ButtonTextMapping);
+        buttonText?: ButtonTextMapping | ((text: ButtonTextMapping) => ButtonTextMapping);
         customButtons?: Record<string, CustomButton>;
         date?: Date | string | undefined;
         dateClick?: (info: DateClickInfo) => void;
