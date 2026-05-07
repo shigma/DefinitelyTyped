@@ -9458,7 +9458,7 @@ declare namespace chrome {
                     exclude_matches?: string[] | undefined;
                     css?: string[] | undefined;
                     js?: string[] | undefined;
-                    run_at?: string | undefined;
+                    run_at?: extensionTypes.RunAt | undefined;
                     all_frames?: boolean | undefined;
                     match_about_blank?: boolean | undefined;
                     include_globs?: string[] | undefined;
@@ -9501,9 +9501,10 @@ declare namespace chrome {
                     exclude_matches?: string[] | undefined;
                     css?: string[] | undefined;
                     js?: string[] | undefined;
-                    run_at?: string | undefined;
+                    run_at?: extensionTypes.RunAt | undefined;
                     all_frames?: boolean | undefined;
                     match_about_blank?: boolean | undefined;
+                    match_origin_as_fallback?: boolean | undefined;
                     include_globs?: string[] | undefined;
                     exclude_globs?: string[] | undefined;
                     world?: "ISOLATED" | "MAIN" | undefined;
